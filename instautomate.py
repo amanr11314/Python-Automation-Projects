@@ -5,7 +5,7 @@ import time
 
 username = input('Username: ')
 password = getpass.getpass(prompt='Password: ', stream=None)
-
+recepientUser = input('Recepeint User: ') #gets username of user to message
 chrome = webdriver.Chrome()
 chrome.maximize_window() #starts chrome in maximized window
 url = ('https://www.instagram.com/accounts/login/?source=auth_switcher') 
@@ -108,7 +108,8 @@ def message_user(search_name):
 
 	search_user(search_name)
 	msg_box=chrome.find_element_by_xpath('/html/body/div[1]/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div/textarea')
-
+	
+	#Use these lines to send a list of messages
 	# msg_list=[str(x) for x in range(5)]
 	# msg_list[0]='/html/body/div[1]/section/div/div[2]/div/div/div[1]/div[2]/div/div/div/div/div[1]'
 	# msg_list[1]='/html/body/div[1]/section/div/div[2]/div/div/div[1]/div[2]/div/div/div/div/div[2]'
@@ -148,7 +149,9 @@ def search_user_from_home(search_name):
 # like()
 # share_a_post()
 # dm()
-message_user('rishabhk812')
+recepientUser = username
+
+message_user()
 # logout()
 
 
