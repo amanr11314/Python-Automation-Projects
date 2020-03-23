@@ -12,4 +12,4 @@ Project i'm working on to automate instagram.
 
 * **Aman Raj** - *Initial work* - (https://github.com/amanr11314)
 ## Contributing
-I would your contribution to make this project much better and adding new features to it. 
+I would like your contribution to make this project much better and adding new features to it. 
